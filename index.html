@@ -16,15 +16,15 @@
     <link rel="stylesheet" href="css/mainmin.css">
     <title>Document</title>
 <body>
-    <section class="section__hero">
+    <section class="section__hero" >
         <div class="container">
             <nav class="section__hero_nav">
                 <ul class="section__hero_menu">
-                    <li class="section__hero_item"><a href="#" class="section__hero_link"> Обо мне</a></li>
-                    <li class="section__hero_item"><a href="#" class="section__hero_link"> Достижения</a></li>
-                    <li class="section__hero_item"><a href="#" class="section__hero_link"> Обучения</a></li>
-                    <li class="section__hero_item"><a href="#" class="section__hero_link"> Услуги</a></li>
-                    <li class="section__hero_item"><a href="#" class="section__hero_link"> Отзывы</a></li>
+                    <li class="section__hero_item"><a href="#about" class="section__hero_link"> Обо мне</a></li>
+                    <li class="section__hero_item"><a href="#achievements" class="section__hero_link"> Достижения</a></li>
+                    <li class="section__hero_item"><a href="#training" class="section__hero_link"> Обучения</a></li>
+                    <li class="section__hero_item"><a href="#services" class="section__hero_link"> Услуги</a></li>
+                    <li class="section__hero_item"><a href="#reviews" class="section__hero_link"> Отзывы</a></li>
                    <a href="#connect" class="button nav_button">Связаться со мной</a>
                 </ul>
             </nav>
@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    <section class="section__about ">
+    <section class="section__about " id="about">
         <div class="container">
             <div class="box__wrapper">
             <h2 class="section__about_description description">Обо мне</h2>
@@ -52,7 +52,7 @@
     </div>
     </section>
 
-    <section class="section__achievements">
+    <section class="section__achievements" id="achievements">
         <div class="container">
             <div class="box__wrapper">
                 <h2 class="section__achievements_descriptions description">Достижения</h2>
@@ -248,7 +248,7 @@
         </div>
     </section>
 
-    <section class="section__training">
+    <section class="section__training" id="training">
         <div class="container">
             <div class="box__wrapper">
                 <h2 class="section__training_description description">Обучения</h2>
@@ -324,7 +324,7 @@
         </div>
     </section>
 
-    <section class="section__services">
+    <section class="section__services" id="services">
         <div class="container">
             <div class="box__wrapper">
                 <h2 class="section__about_description description">Услуги</h2>
@@ -386,7 +386,7 @@
         </div>
     </section>
 
-    <section class="section__warranty">
+    <section class="section__warranty" id="warranty">
         
         <div class="container">
             <div class="section__warranty_content">
@@ -398,7 +398,7 @@
         </div>
     </section>
 
-    <section class="section__reviews">
+    <section class="section__reviews" id="reviews">
         <div class="container">
             <div class="box__wrapper">
                 <h2 class="section__about_description description">Отзывы клиентов</h2>
@@ -433,11 +433,12 @@
                 </div>
                 <div class="section__connect_line"></div>
                 <div class="section__connect_right" col-md-6>
-                    <form action="send.php" class="section__connect_form">
+                    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')" class="section__connect_form">
                         <p class="section__connect_text">Или оставьте свои контактные данные, я с Вами свяжусь:</p>
                         <input type="text" name="name" placeholder="Имя" class="section__connect_input">
                         <!-- <input type="text" name="e-mail" placeholder="e-mail" class="section__connect_input"> -->
-                        <input type="phone" name="phone" placeholder="Номер телефона" class="section__connect_input">
+                        <input type="tel" name="phone" placeholder="Номер телефона" class="section__connect_input">
+                        <textarea type="text" name="text" placeholder="Сообщение" class="section__connect_input section__connect_input-text"></textarea>
                         <button type="submit" class="button section__connect_button">Отправить</button>
                     </form>
                 </div>
