@@ -1,0 +1,43 @@
+.section__achievements {
+    margin-top: 50px;
+    &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    &_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        
+        
+    }
+    &_check {
+        background: url('../img/check.png') center center/cover no-repeat;
+        min-width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    &_descr {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+}
+
+.carousel-control-prev-icon {
+    background: url('../img/arrow_prev.svg') center center/cover no-repeat;
+    width: 30px;
+    height: 60px;
+}
+.carousel-control-next-icon {
+    background: url('../img/arrow_next.svg') center center/cover no-repeat;
+    width: 30px;
+    height: 60px;
+}
+    
+
+

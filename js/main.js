@@ -1,3 +1,4 @@
+window.addEventListener('DOMContentLoaded', () => {
 function changeFunction () {
   var change = document.getElementById ("changebtn");
   if (change.innerHTML === "Показать все") {
@@ -59,5 +60,32 @@ function send(event, php){
   req.onerror = function() {alert("Ошибка отправки запроса");};
   req.send(new FormData(event.target));
   }
+
+  var menu = document.querySelector('.section__hero_menu'),
+  menuItem = document.querySelectorAll('.section__hero_item'),
+  burger = document.querySelector('.section__hero_menu-burger');
+ console.log(menuItem);
+  burger.addEventListener('click', function () {
+    burger.classList.toggle('section__hero_menu-burger_active');
+    menu.classList.toggle('section__hero_menu_active');
+  });
+
+  // menuItem.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     burger.classList.remove('section__hero_menu-burger_active');
+  //     menu.classList.remove('section__hero_menu_active');
+  //   });
+  // });
+
+  menuItem.forEach(function(i) {
+    i.addEventListener('click', function () {
+      console.log('click');
+      burger.classList.toggle('section__hero_menu-burger_active');
+      menu.classList.toggle('section__hero_menu_active');
+    });
+  });
+
+});
+
 
 

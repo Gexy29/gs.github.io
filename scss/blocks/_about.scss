@@ -1,0 +1,21 @@
+.section__about {
+    margin-top: 50px;
+    &_photo {
+        display: block;
+        width: 50%;
+        height: 446px;
+        background: url('../img/about.jpg') center center/cover no-repeat;
+    }
+    &_wrapper {
+        display: flex;
+        
+    }
+    &_text {
+        width: 50%;
+        margin-right: 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 130%;
+        color: #000000;
+    }
+}

@@ -1,0 +1,56 @@
+.section__hero {
+    background: url('../img/hero.jpg') center center/cover no-repeat;
+    height: 700px ;
+    &_nav {
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    &_menu  {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        align-items: center;
+
+        
+    }
+    &_item {
+        margin-right: 26px;
+      
+    }
+    &_link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FDFDFF;
+        &:hover {
+            color: #DB1A1A;
+        }
+        }
+
+
+    &_content {
+        width: 588px;
+        margin: 0 0 0 50px;
+    }
+    &_title {
+        font-weight: 500;
+        font-size: 120px;
+        line-height: 141px;
+        color: #FFFAFA;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &_subtitle {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin: 54px 0 54px 0;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+    &_menu-burger {
+        display: none;
+    }
+}

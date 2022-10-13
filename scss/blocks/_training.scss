@@ -1,0 +1,33 @@
+.section__training {
+    margin-top: 50px;
+    &_wrapper {
+      display: flex;
+      // justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: auto;
+      margin: 0 auto;
+    }
+    &_item {
+      display: flex;
+      flex-direction: column;
+      // margin-right: 50px;
+      align-items: center;
+    }
+    &_img {
+      width: 150px;
+    }
+    &_descr {
+      margin-top: 10px;
+      margin-bottom: 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    &_size {
+      font-size: 10px;
+      font-weight: 300;
+    }
+   
+}
+

@@ -1,0 +1,45 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 58px;
+    background-color: #DB1A1A;
+    border-radius: 15px;
+    padding: 17px 45px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: #fff;
+        
+    }
+}
+
+.nav_button {
+   
+    width: 150px;
+    height: 46px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.section__achievements_button {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.section__services_button {
+    width: 340px;
+    font-size: 18px;
+}
+
+.section__connect_button {
+    width: 240px;
+}
